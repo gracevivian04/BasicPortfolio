@@ -1,0 +1,31 @@
+
+.navbar {
+    background-color: #E9FAE3;
+    border-radius: 20px;
+}
+
+nav.navbar img.logo {
+    width: 15%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.link {
+    text-decoration: none;
+    color: #806079;
+}
+
+.main-content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.footer {
+    font-style: italic;
+    text-align: center;
+    font-size: smaller;
+    background-color: #E9FAE3;
+    border-radius: 20px;
+    color: #806079;
+}
