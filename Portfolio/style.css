@@ -1,31 +1,150 @@
 
-.navbar {
-    background-color: #E9FAE3;
-    border-radius: 20px;
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px;
+    grid-template-areas: 
+    "navbar navbar"
+    "header header"
+    "main aside"
+    "main form"
+    "footer footer";
 }
 
-nav.navbar img.logo {
-    width: 15%;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
+nav {
+    background-color: #E8D6CB;
+    grid-area: navbar;
 }
 
-.link {
+header {
+    background-color: #D0ADA7;
+    grid-area: header;
+}
+
+main {
+    background-color: #AD6A6C;
+    grid-area: main;
+}
+
+form {
+    background-color: #D0ADA7;
+    grid-area: form;
+}
+
+aside {
+    background-color: #D0ADA7;
+    grid-area: aside;
+}
+
+footer {
+    background-color: #E8D6CB;
+    grid-area: footer;
+}
+
+.socials {
+    width: 10%;
+    height: 45px;
+}
+
+.navbar .links {
     text-decoration: none;
-    color: #806079;
+    display: none;
 }
 
-.main-content {
-    width: 100vw;
-    height: 100vh;
+.skill {
+    border: 1px solid #5D2E46;
+    border-radius: 10px;
+    margin: 1em 0 1em 0;
+    height: 1em;
 }
 
-.footer {
-    font-style: italic;
-    text-align: center;
-    font-size: smaller;
-    background-color: #E9FAE3;
-    border-radius: 20px;
-    color: #806079;
+.skill-level {
+    height: 1em;
+    border-radius: 10px;
+    background-color: #D0ADA7;
+}
+
+#html {
+    animation-name: htmlSkillLevel;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes htmlSkillLevel {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+#css {
+    animation-name: cssSkillLevel;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cssSkillLevel {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+#python {
+    animation-name: pythonSkillLevel;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pythonSkillLevel {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+#javascript {
+    animation-name: jsSkillLevel;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jsSkillLevel {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+#react {
+    animation-name: reactSkillLevel;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes reactSkillLevel {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .link {
+        color: #5D2E46;
+        transition: color 3ms linear;
+    }
+    .navbar .link:hover{
+        color: #B58DB6;
+    }
 }

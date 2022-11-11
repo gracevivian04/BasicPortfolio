@@ -5,29 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/Portfolio/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
-        <img class="logo" src="/Portfolio/media/Grace.jpg" alt="Grace Vivian">
-        <a class="link" href="#">Projects</a>
-        <a class="link" href="#">Skills</a>
-        <a class="link" href="#">Contact</a>
+       <!-- <img class="logo" src="/media/Grace.jpg" alt="Grace Vivian"> -->
+        <ul class="links">
+        <li><a class="link" href="#">Projects</a></li>
+        <li><a class="link" href="#">Skills</a></li>
+        <li><a class="link" href="#">Contact</a></li>
+        </ul>
     </nav>
+    <header><h1>Grace Vivian</h1></header>
     <main class="main-content">
-        <h1>Grace Vivian</h1>
+        <h2>About me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nihil totam aliquam ipsum dolore et eligendi necessitatibus sapiente, reprehenderit recusandae quibusdam iusto quos dolores similique ipsa natus ad voluptatem provident. </p>
-        <h2>My Skills</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, facilis repudiandae aut quos libero itaque asperiores eum commodi minus veniam doloribus quibusdam ea. Distinctio voluptas sapiente, laborum rem aliquid quasi.</p>
+        <div class="skills">
+        <h3>My Skills</h3>
+        <span>HTML</span>
+        <div class="skill">
+            <div class="skill-level" id="html"></div>
+        </div>
+        <span>CSS</span>
+        <div class="skill">
+            <div class="skill-level" id="css"></div>
+        </div>
+        <span>Python</span>
+        <div class="skill">
+            <div class="skill-level" id="python"></div>
+        </div>
+        <span>Javascript</span>
+        <div class="skill">
+            <div class="skill-level" id="javascript"></div>
+        </div>
+        <span>React</span>
+        <div class="skill">
+            <div class="skill-level" id="react"></div>
+        </div>
+        </div>
     </main>
+    <div class="contact">
+        <aside>
+        <legend>How do we know each other?</legend>
+        <div>
+            <label for="university">University</label>
+            <input id="uni" name="uni" type="radio">
+        </div>
+        <div>
+            <label for="keepcoding">KeepCoding Kick-off</label>
+            <input id="keepcoding" name="keepcoding" type="radio">
+        </div>
+        <div>
+            <label for="school">School</label>
+            <input id="school" name="school" type="radio">
+        </div>
+        <div>
+            <label for="github">On Github</label>
+            <input id="git" name="git" type="radio">
+        </div>
+    </aside>
     <form>
         <div>
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Enter your name here">
+            <input id="name" name="name" type="text" placeholder="Enter your name">
         </div>
         <div>
             <label for="surname">Surname</label>
-            <input id="surname" name="surname" type="text" placeholder="Enter your surname here">
+            <input id="surname" name="surname" type="text" placeholder="Enter your surname">
         </div>
         <div>
             <label for="phone">Phone No.</label>
@@ -35,36 +79,18 @@
         </div>
         <div>
             <label for="github">Github Username</label>
-            <input id="github" name="github" type="text" placeholder="In this format (@<username>)">
+            <input id="github" name="github" type="text" placeholder="@<username>">
         </div>
-    </form>
-    <fieldset>
         <div>
-            <legend>How do we know each other?</legend>
-            <div>
-                <label for="university">University</label>
-                <input id="uni" name="uni" type="radio">
+            <input type="submit" value="send">
             </div>
-            <div>
-                <label for="keepcoding">KeepCoding Kick-off</label>
-                <input id="keepcoding" name="keepcoding" type="radio">
-            </div>
-            <div>
-                <label for="school">School</label>
-                <input id="school" name="school" type="radio">
-            </div>
-            <div>
-                <label for="github">On Github</label>
-                <input id="git" name="git" type="radio">
-            </div>
-        </div>
-    </fieldset>
-    <input type="submit" value="send">
+    </form>
+    </div>
     <footer class="footer">
-        <a href="https://www.linkedin.com/in/grace-vivian-07844497/"><img src="/Portfolio/media/linkedin.png" alt="linkedin logo"></a>
-        <a href="https://www.instagram.com/gracevivian1/"><img src="/Portfolio/media/Instagram_Glyph_Gradient copy.png" alt="instagram logo"></a>
-        <a href="https://github.com/gracevivian04"><img src="/Portfolio/media/GitHub-Mark-120px-plus.png" alt="github logo"></a>
-        Coded by Grace Vivian
+        <a href="https://www.linkedin.com/in/grace-vivian-07844497/"><img class="socials" src="/media/LI-In-Bug.png" alt="linkedin logo"></a>
+        <a href="https://www.instagram.com/gracevivian1/"><img class="socials" src="/media/Instagram_Glyph_Gradient copy.png" alt="instagram logo"></a>
+        <a href="https://github.com/gracevivian04"><img class="socials" src="/media/GitHub-Mark-120px-plus.png" alt="github logo"></a>
+        <div>Coded by Grace Vivian</div>
     </footer>
 </body>
 </html>
