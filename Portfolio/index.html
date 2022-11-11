@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-       <!-- <img class="logo" src="/media/Grace.jpg" alt="Grace Vivian"> -->
+        <img class="profile" src="/media/Grace.jpg" alt="Grace Vivian">
         <ul class="links">
         <li><a class="link" href="#">Projects</a></li>
         <li><a class="link" href="#">Skills</a></li>
@@ -44,27 +44,29 @@
         </div>
         </div>
     </main>
-    <div class="contact">
-        <aside>
-        <legend>How do we know each other?</legend>
+        <form action="#" method="post">
+        <p>How do we know each other?</p>
         <div>
             <label for="university">University</label>
-            <input id="uni" name="uni" type="radio">
+            <input id="uni" name="connection" type="radio">
         </div>
         <div>
             <label for="keepcoding">KeepCoding Kick-off</label>
-            <input id="keepcoding" name="keepcoding" type="radio">
+            <input id="keepcoding" name="connection" type="radio">
         </div>
         <div>
             <label for="school">School</label>
-            <input id="school" name="school" type="radio">
+            <input id="school" name="connection" type="radio">
         </div>
         <div>
             <label for="github">On Github</label>
-            <input id="git" name="git" type="radio">
+            <input id="git" name="connection" type="radio">
         </div>
-    </aside>
-    <form>
+        <div>
+            <label for="message">Feel feel to drop me a message:</label>
+            <textarea id="message" name="message" maxlength="180" placeholder="Type your message here..."></textarea>
+        </div>
+        <div class="contact-info">
         <div>
             <label for="name">Name</label>
             <input id="name" name="name" type="text" placeholder="Enter your name">
@@ -82,15 +84,14 @@
             <input id="github" name="github" type="text" placeholder="@<username>">
         </div>
         <div>
-            <input type="submit" value="send">
-            </div>
-    </form>
-    </div>
+            <button class="button" type="submit" value="send">Send</button>
+        </div>
+        </div>
+        </form>
     <footer class="footer">
         <a href="https://www.linkedin.com/in/grace-vivian-07844497/"><img class="socials" src="/media/LI-In-Bug.png" alt="linkedin logo"></a>
         <a href="https://www.instagram.com/gracevivian1/"><img class="socials" src="/media/Instagram_Glyph_Gradient copy.png" alt="instagram logo"></a>
         <a href="https://github.com/gracevivian04"><img class="socials" src="/media/GitHub-Mark-120px-plus.png" alt="github logo"></a>
-        <div>Coded by Grace Vivian</div>
     </footer>
 </body>
 </html>
