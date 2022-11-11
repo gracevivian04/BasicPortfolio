@@ -36,6 +36,7 @@ form {
     grid-area: form;
     color: #5D2E46;
     padding: 8px;
+    display: block;
 }
 
 footer {
@@ -45,6 +46,7 @@ footer {
     align-items: center;
     justify-content: center;
     column-gap: 2em;
+    padding: 3px;
 }
 
 nav.navbar img.profile {
@@ -88,10 +90,15 @@ main h3 {
     background-color: #D0ADA7;
 }
 
+.connection {
+    margin: 25px 5px 25px 5px;
+}
 .contact-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
+    margin: 25px 5px 25px 5px;
 }
 
 .button {

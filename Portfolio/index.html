@@ -45,7 +45,8 @@
         </div>
     </main>
         <form action="#" method="post">
-        <p>How do we know each other?</p>
+        <div class="connection">
+            <p>How do we know each other?</p>
         <div>
             <label for="university">University</label>
             <input id="uni" name="connection" type="radio">
@@ -62,27 +63,28 @@
             <label for="github">On Github</label>
             <input id="git" name="connection" type="radio">
         </div>
+        </div>
         <div>
             <label for="message">Feel feel to drop me a message:</label>
             <textarea id="message" name="message" maxlength="180" placeholder="Type your message here..."></textarea>
         </div>
         <div class="contact-info">
-        <div>
+        <span>
             <label for="name">Name</label>
             <input id="name" name="name" type="text" placeholder="Enter your name">
-        </div>
-        <div>
+        </span>
+        <span>
             <label for="surname">Surname</label>
             <input id="surname" name="surname" type="text" placeholder="Enter your surname">
-        </div>
-        <div>
+        </span>
+        <span>
             <label for="phone">Phone No.</label>
             <input id="phone" name="phone" type="tel" placeholder="Phone number">
-        </div>
-        <div>
+        </span>
+        <span>
             <label for="github">Github Username</label>
             <input id="github" name="github" type="text" placeholder="@<username>">
-        </div>
+        </span>
         <div>
             <button class="button" type="submit" value="send">Send</button>
         </div>
