@@ -14,7 +14,6 @@
             <button class="menu-button">Info</button>
             <div class="menu-links">
             <a class="link" href="#aboutMe">About Me</a>
-            <a class="link" href="#">Projects</a>
             <a class="link" href="#skills">Skills</a>
             <a class="link" href="#contact">Contact</a>
             </div>
@@ -23,7 +22,7 @@
     <header><h1>Grace Vivian</h1></header>
     <main class="main-content">
         <section id="aboutMe"><h2>About me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nihil totam aliquam ipsum dolore et eligendi necessitatibus sapiente, reprehenderit recusandae quibusdam iusto quos dolores similique ipsa natus ad voluptatem provident. </p>
+        <p>Developer in training, coding since Feb 2022. Based in Barcelona with a love of languages and travelling. Honing my FrontEnd skills currently with KeepCoding. </p>
         </section>
         <section id="skills"><div class="skills">
         <h3>My Skills</h3>
@@ -49,15 +48,15 @@
         </div>
         </section>
     </main>
-        <form action="#" method="post">
-        <div class="connection">
+        <form action="/contact.html" method="post" novalidate>
+            <div class="contact-info">
             <p>How do we know each other?</p>
         <div>
             <label for="university">University</label>
             <input id="uni" name="connection" type="radio">
         </div>
         <div>
-            <label for="keepcoding">KeepCoding Kick-off</label>
+            <label for="keepcoding">KeepCoding</label>
             <input id="keepcoding" name="connection" type="radio">
         </div>
         <div>
@@ -66,15 +65,12 @@
         </div>
         <div>
             <label for="github">On Github</label>
-            <input id="git" name="connection" type="radio">
-        </div>
+            <input id="git" name="connection" type="radio" pattern="[a-z0-9]{1,39}">
         </div>
         <div>
             <label for="message">Feel feel to drop me a message:</label>
             <textarea id="message" name="message" maxlength="180" placeholder="Type your message here..."></textarea>
         </div>
-        <section id="contact">
-            <div class="contact-info">
         <span>
             <label for="name">Name</label>
             <input id="name" name="name" type="text" placeholder="Enter your name">
@@ -92,10 +88,9 @@
             <input id="github" name="github" type="text" placeholder="@<username>">
         </span>
         <div>
-            <button class="button" type="submit" value="send">Send</button>
+            <input class="button" type="submit" value="Send">
         </div>
         </div>
-        </section>
         </form>
     <footer class="footer">
         <a href="https://www.linkedin.com/in/grace-vivian-07844497/"><img class="socials" src="/media/LI-In-Bug.png" alt="linkedin logo"></a>
